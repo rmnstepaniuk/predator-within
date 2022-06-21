@@ -44,7 +44,7 @@ public class Wolf extends Entity {
         this.width = Panel.tileSize / 3 * 2;
         this.height = Panel.tileSize / 2;
 
-        System.out.println("Wolf X: " + worldX + "\tWolf Y: " + worldY);
+//        System.out.println("Wolf X: " + worldX + "\tWolf Y: " + worldY);
 
         loadImage();
     }
