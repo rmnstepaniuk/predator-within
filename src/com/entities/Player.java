@@ -1,8 +1,8 @@
-package com.entities;
+package src.com.entities;
 
-import com.assets.Bullet;
-import com.handlers.KeyHandler;
-import com.frame.Panel;
+import src.com.assets.Bullet;
+import src.com.handlers.KeyHandler;
+import src.com.frame.Panel;
 
 import javax.imageio.ImageIO;
 import javax.vecmath.Vector2d;
@@ -55,14 +55,14 @@ public class Player extends Entity {
 
     private void loadImage() {
         try {
-            up_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/player/player_up_1.png")));
-            up_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/player/player_up_2.png")));
-            down_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/player/player_down_1.png")));
-            down_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/player/player_down_2.png")));
-            right_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/player/player_right_1.png")));
-            right_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/player/player_right_2.png")));
-            left_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/player/player_left_1.png")));
-            left_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/player/player_left_2.png")));
+            up_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/player/player_up_1.png")));
+            up_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/player/player_up_2.png")));
+            down_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/player/player_down_1.png")));
+            down_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/player/player_down_2.png")));
+            right_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/player/player_right_1.png")));
+            right_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/player/player_right_2.png")));
+            left_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/player/player_left_1.png")));
+            left_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/player/player_left_2.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,8 +1,8 @@
-package com.steering.behaviours;
+package src.com.steering.behaviours;
 
-import com.entities.Entity;
-import com.frame.Panel;
-import com.steering.Steering;
+import src.com.entities.Entity;
+import src.com.frame.Panel;
+import src.com.steering.Steering;
 
 import javax.vecmath.Vector2d;
 

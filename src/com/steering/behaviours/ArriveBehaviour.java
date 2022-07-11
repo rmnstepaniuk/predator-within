@@ -1,6 +1,6 @@
-package com.steering.behaviours;
+package src.com.steering.behaviours;
 
-import com.entities.Entity;
+import src.com.entities.Entity;
 
 public class ArriveBehaviour {
 

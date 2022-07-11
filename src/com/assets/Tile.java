@@ -1,4 +1,4 @@
-package com.assets;
+package src.com.assets;
 
 import java.awt.image.BufferedImage;
 

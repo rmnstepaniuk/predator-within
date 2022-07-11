@@ -1,4 +1,4 @@
-package com.steering.behaviours;
+package src.com.steering.behaviours;
 
 public enum Behaviour {
     WANDER("wander"),

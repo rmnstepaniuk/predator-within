@@ -1,6 +1,6 @@
-package com.frame;
+package src.com.frame;
 
-import com.entities.agents.Wolf;
+import src.com.entities.agents.Wolf;
 
 import java.util.Random;
 

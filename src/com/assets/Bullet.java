@@ -1,6 +1,6 @@
-package com.assets;
+package src.com.assets;
 
-import com.frame.Panel;
+import src.com.frame.Panel;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -43,7 +43,7 @@ public class Bullet {
 
     private void loadImage() {
         try {
-            image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/bullet.png")));
+            image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/bullet.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

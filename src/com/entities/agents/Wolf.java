@@ -1,8 +1,8 @@
-package com.entities.agents;
+package src.com.entities.agents;
 
-import com.entities.Entity;
-import com.frame.Panel;
-import com.steering.behaviours.*;
+import src.com.entities.Entity;
+import src.com.frame.Panel;
+import src.com.steering.behaviours.*;
 
 import javax.imageio.ImageIO;
 import javax.vecmath.Vector2d;
@@ -46,13 +46,13 @@ public class Wolf extends Entity {
 
     private void loadImage() {
         try {
-            right_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/wolf/wolf_right_1.png")));
-            right_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/wolf/wolf_right_2.png")));
-            right_3 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/wolf/wolf_right_3.png")));
+            right_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/wolf/wolf_right_1.png")));
+            right_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/wolf/wolf_right_2.png")));
+            right_3 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/wolf/wolf_right_3.png")));
 
-            left_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/wolf/wolf_left_1.png")));
-            left_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/wolf/wolf_left_2.png")));
-            left_3 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/wolf/wolf_left_3.png")));
+            left_1 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/wolf/wolf_left_1.png")));
+            left_2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/wolf/wolf_left_2.png")));
+            left_3 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/wolf/wolf_left_3.png")));
 
         } catch (IOException e) {
             e.printStackTrace();

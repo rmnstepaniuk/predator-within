@@ -1,7 +1,7 @@
-package com.handlers;
+package src.com.handlers;
 
-import com.assets.Tile;
-import com.frame.Panel;
+import src.com.assets.Tile;
+import src.com.frame.Panel;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -22,7 +22,7 @@ public class TileHandler {
 
     private void loadImage() {
         try {
-            tile.image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/res/tiles/grass.png")));
+            tile.image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/src/res/tiles/grass.png")));
         } catch (IOException e) {
             e.printStackTrace();
         }

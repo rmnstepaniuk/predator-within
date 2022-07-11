@@ -1,6 +1,6 @@
-package com.steering;
+package src.com.steering;
 
-import com.entities.Entity;
+import src.com.entities.Entity;
 
 import javax.vecmath.Vector2d;
 

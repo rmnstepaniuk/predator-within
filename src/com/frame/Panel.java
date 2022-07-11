@@ -1,11 +1,11 @@
-package com.frame;
+package src.com.frame;
 
-import com.assets.Bullet;
-import com.entities.Entity;
-import com.entities.Player;
-import com.handlers.CollisionHandler;
-import com.handlers.KeyHandler;
-import com.handlers.TileHandler;
+import src.com.assets.Bullet;
+import src.com.entities.Entity;
+import src.com.entities.Player;
+import src.com.handlers.CollisionHandler;
+import src.com.handlers.KeyHandler;
+import src.com.handlers.TileHandler;
 
 import javax.swing.JPanel;
 

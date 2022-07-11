@@ -1,7 +1,7 @@
-package com.handlers;
+package src.com.handlers;
 
-import com.assets.Bullet;
-import com.entities.Entity;
+import src.com.assets.Bullet;
+import src.com.entities.Entity;
 
 import java.awt.*;
 

@@ -1,7 +1,7 @@
-package com.entities;
+package src.com.entities;
 
-import com.entities.agents.Wolf;
-import com.frame.Panel;
+import src.com.entities.agents.Wolf;
+import src.com.frame.Panel;
 
 import javax.vecmath.Vector2d;
 import java.awt.*;
