@@ -1,4 +1,4 @@
-package com.agents;
+package com.entities.agents;
 
 import com.entities.Entity;
 import com.frame.Panel;
@@ -10,8 +10,6 @@ import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class Wolf extends Entity {
@@ -22,9 +20,6 @@ public class Wolf extends Entity {
     // Target and behaviour
     private Behaviour behaviour;
     private Entity target;
-
-    // Pack
-//    public boolean inPack;
 
     public Wolf(Panel panel, int worldX, int worldY) {
         super(panel);
@@ -67,8 +62,6 @@ public class Wolf extends Entity {
     public void update() {
         if (visible) {
 
-//            if (inPack) target = panel.player;
-//            else
             target = findTarget(panel.agents, panel.player);
             setBehaviour();
             switch (behaviour) {
@@ -141,15 +134,4 @@ public class Wolf extends Entity {
         if (angle > 0 && angle < Math.PI / 2) direction = "right";
         else direction = "left";
     }
-
-//    public static void formPack(List<Entity> wolves) {
-//        if (wolves.size() > 3) {
-//            for (Entity entity : wolves) {
-//                if (entity instanceof Wolf) {
-//                    ((Wolf) entity).inPack = true;
-//                }
-//            }
-//        }
-//    }
-
 }

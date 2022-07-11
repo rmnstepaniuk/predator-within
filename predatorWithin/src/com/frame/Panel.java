@@ -1,6 +1,5 @@
 package com.frame;
 
-import com.agents.Wolf;
 import com.assets.Bullet;
 import com.entities.Entity;
 import com.entities.Player;
@@ -87,25 +86,18 @@ public class Panel extends JPanel implements Runnable {
     }
 
     private void collisionCheck() {
-        Entity agent, agent2;
+        Entity agent;
         Bullet bullet;
         List<Bullet> bullets = player.bullets;
 
         for (int i = 0; i < agents.size(); i++) {
             agent = agents.get(i);
             if (CollisionHandler.entityCollision(agent, player)) {
-//                System.out.println("Player collision");
                 gameThread = null;
             }
-//            for (int j = 0; j < agents.size(); j++) {
-//                agent2 = agents.get(j);
-//                if (CollisionHandler.entityCollision(agent, agent2)) System.out.println("Entity collision");
-////                CollisionHandler.entityCollision(agent, agent2);
-//            }
             for (int k = 0; k < bullets.size(); k++) {
                 bullet = bullets.get(k);
                 if (CollisionHandler.bulletCollision(bullet, agent)) {
-//                    System.out.println("Bullet collision");
                     agent.visible = false;
                     agents.remove(agent);
                     bullet.visible = false;
@@ -133,24 +125,24 @@ public class Panel extends JPanel implements Runnable {
         }
 
         // Debug
+/*
+        Rectangle playerHitBox = player.getHitBox();
+        Rectangle entityHitBox;
+        Rectangle bulletHitBox ;
+        g2d.setColor(Color.red);
 
-//        Rectangle playerHitBox = player.getHitBox();
-//        Rectangle entityHitBox;
-//        Rectangle bulletHitBox ;
-//        g2d.setColor(Color.red);
-//
-//        g2d.drawString("World X: " + player.worldX + ";   World Y: " + player.worldY, screenWidth / 2, 50);
-//
-//        g2d.drawRect(playerHitBox.x, playerHitBox.y, playerHitBox.width, playerHitBox.height);
-//        for (Bullet bullet : player.bullets) {
-//            bulletHitBox = bullet.getHitBox();
-//            g2d.drawRect(bulletHitBox.x, bulletHitBox.y, bulletHitBox.width, bulletHitBox.height);
-//        }
-//        for (Entity agent : agents) {
-//            entityHitBox = agent.getHitBox();
-//            g2d.drawRect(entityHitBox.x, entityHitBox.y, entityHitBox.width, entityHitBox.height);
-//        }
+        g2d.drawString("World X: " + player.worldX + ";   World Y: " + player.worldY, screenWidth / 2, 50);
 
+        g2d.drawRect(playerHitBox.x, playerHitBox.y, playerHitBox.width, playerHitBox.height);
+        for (Bullet bullet : player.bullets) {
+            bulletHitBox = bullet.getHitBox();
+            g2d.drawRect(bulletHitBox.x, bulletHitBox.y, bulletHitBox.width, bulletHitBox.height);
+        }
+        for (Entity agent : agents) {
+            entityHitBox = agent.getHitBox();
+            g2d.drawRect(entityHitBox.x, entityHitBox.y, entityHitBox.width, entityHitBox.height);
+        }
+*/
         g2d.dispose();
     }
 

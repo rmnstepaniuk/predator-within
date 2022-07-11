@@ -1,6 +1,5 @@
 package com.handlers;
 
-import com.agents.Wolf;
 import com.assets.Bullet;
 import com.entities.Entity;
 

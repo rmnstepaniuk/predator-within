@@ -1,6 +1,6 @@
 package com.entities;
 
-import com.agents.Wolf;
+import com.entities.agents.Wolf;
 import com.frame.Panel;
 
 import javax.vecmath.Vector2d;
